@@ -1,0 +1,34 @@
+[{
+  "_id": {
+    "$oid": "6033dfc4a72364433cedc6d0"
+  },
+  "title": "The Midnight Sky",
+  "year": 2020,
+  "genre": "Sci-fi, Drama",
+  "actors": "George Clooney, Sophie Rundle",
+  "desc": "The Midnight Sky is a 2020 American science fiction film directed by George Clooney, based on the 2016 novel Good Morning, Midnight by Lily Brooks-Dalton. It stars Clooney as a scientist who must venture through the Arctic Circle to warn off a returning spaceship following a global catastrophe. Felicity Jones, David Oyelowo, Tiffany Boone, Demián Bichir, Kyle Chandler, and Caoilinn Springall also star.",
+  "date": {
+    "$date": "2021-02-22T16:45:56.158Z"
+  },
+  "img": "1614012355929_images.jpg",
+  "rating": "3",
+  "length": "2hr2min",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6033e5817d9b592ae4ed08c9"
+  },
+  "title": "BETTY'S ART STORE",
+  "year": 1997,
+  "genre": "Horror",
+  "actors": "Johan",
+  "desc": "hh",
+  "date": {
+    "$date": "2021-02-22T17:10:25.151Z"
+  },
+  "img": "1614013825054_images.jpg",
+  "rating": "2",
+  "length": "2hr2min",
+  "director": "joh",
+  "__v": 0
+}]

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Homepage</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog Template">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+    
+    <!-- FontAwesome JS-->
+    <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme-1.css">
+
+</head> 
+
+<body>
+    
+    <header class="header text-center">	    
+	    <h1 class="blog-name pt-lg-4 mb-0"><a href="/">CMS using MongoDB</a></h1>
+		<h1 class="blog-name pt-lg-4 mb-0"><a>Homepage</a></h1>
+        
+	    <nav class="navbar navbar-expand-lg navbar-dark" >
+           
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="navigation" class="collapse navbar-collapse flex-column" >
+				<div class="profile-section pt-3 pt-lg-0">
+				    			
+					
+					<div class="bio mb-3">This page fetch data from NoSQL database and displays on this page. </div><!--//Intro-->
+					<ul class="social-list list-inline py-3 mx-auto">
+			            <li class="list-inline-item"><a href="#"><i class="fab fa-github"></i></a></li>
+			        </ul><!--//repository list-->
+			        <hr> 
+				</div><!--//profile-section-->
+				
+				<ul class="navbar-nav flex-column text-left">
+					<li class="nav-item ">
+					    <a class="nav-link" href="/">Dashboard <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active">
+					    <a class="nav-link" href="/homepage">Homepage</a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link" href="/about">About</a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link" href="/license">Licensing</a>
+					</li>
+				</ul>
+
+			</div>
+		</nav>
+    </header>
+    
+
+
+    <div class="main-wrapper">
+	    <section class="cta-section theme-bg-light py-5">
+		    <div class="container text-center">
+			    <h2 class="heading">Homepage</h2>
+			    <div class="intro"></div>
+			   
+		    </div><!--//container-->
+	    </section>
+	    <section class="blog-list px-3 py-5 p-md-5">
+		    <div class="container">
+			    <div class="item mb-5">
+				    <div class="media">
+					    
+					    <div class="media-body">
+						 
+						 
+						<% moviesList.forEach(movie => {%>
+						
+						<p style="font-size:20px;">Title &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <span style="font-size:30px;"> <%=movie.title%></span>&nbsp &nbsp &nbsp <span style="font-size:15px"> <%= movie.length%></span>&nbsp &nbsp &nbsp <span style="font-size:15px"> <%= movie.year%></span></p>
+						<div class="row">
+						<div class="col-12 " style="text-align:center">
+							<img src="./uploads/images/<%=movie.img%>" alt="Image" width="550" height="570" style="box-shadow: 6px 6px 10px black" ><br>
+						</div>
+						</div>
+						<hr>		
+						<p style="font-size:20px;">Genre &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <span style="font-size:30px;"> <%=movie.genre%></span>
+						<p style="font-size:20px;">Actors &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <span style="font-size:30px;"> <%=movie.actors%></span>
+						<p style="font-size:20px;">Director &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <span style="font-size:30px;"> <%=movie.director%></span>						
+						<p class= "text-justify" ><%=movie.desc%></p>
+						<p style="text-align:right;"><i><small><a href="" style="color:blue">Edit</a> | <a href="" style="color:red">Remove</a>  | Published on- <%= movie.date%></small></i></p>
+						<hr>
+						 <%})%>
+						 
+						 
+					    </div><!--//media-body-->
+				    </div><!--//media-->
+			    </div><!--//item-->
+			    
+			    
+				
+		    </div>
+	    </section>
+	    
+    
+    </div><!--//main-wrapper-->
+    
+    
+    
+   
+
+    
+       
+    <!-- Javascript -->          
+    <script src="assets/plugins/jquery-3.3.1.min.js"></script>
+    <script src="assets/plugins/popper.min.js"></script> 
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+
+    <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
+    <script src="assets/js/demo/style-switcher.js"></script>     
+    
+
+</body>
+</html> 
+
