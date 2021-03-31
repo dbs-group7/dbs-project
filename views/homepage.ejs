@@ -22,7 +22,7 @@
 <body>
     
     <header class="header text-center">	    
-	    <h1 class="blog-name pt-lg-4 mb-0"><a href="/">CMS using MongoDB</a></h1>
+	    <h1 class="blog-name pt-lg-4 mb-0"><a href="/">CMS</a></h1>
 		<h1 class="blog-name pt-lg-4 mb-0"><a>Homepage</a></h1>
         
 	    <nav class="navbar navbar-expand-lg navbar-dark" >
@@ -35,7 +35,7 @@
 				<div class="profile-section pt-3 pt-lg-0">
 				    			
 					
-					<div class="bio mb-3">This page fetch data from NoSQL database and displays on this page. </div><!--//Intro-->
+					<div class="bio mb-3" style="text-align:justify">At homepage you can view the contents related to movies stored in the database. The displayed list of contents is fetched from 'movies' document. This document is joined using aggregate function to another document, reviews.  </div><!--//Intro-->
 					<ul class="social-list list-inline py-3 mx-auto">
 			            <li class="list-inline-item"><a href="#"><i class="fab fa-github"></i></a></li>
 			        </ul><!--//repository list-->
@@ -43,12 +43,18 @@
 				</div><!--//profile-section-->
 				
 				<ul class="navbar-nav flex-column text-left">
-					<li class="nav-item ">
-					    <a class="nav-link" href="/">Dashboard <span class="sr-only">(current)</span></a>
+					<li class="nav-item">
+					    <a class="nav-link" href="/">Refresh <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item active">
 					    <a class="nav-link" href="/homepage">Homepage</a>
 					</li>
+					<li class="nav-item">
+					    <a class="nav-link" href="/reviewHome">Review</a>
+					</li>
+					<!-- <li class="nav-item">
+					    <a class="nav-link" href="/join">Join</a>
+					</li> -->
 					<li class="nav-item">
 					    <a class="nav-link" href="/about">About</a>
 					</li>
@@ -66,7 +72,8 @@
     <div class="main-wrapper">
 	    <section class="cta-section theme-bg-light py-5">
 		    <div class="container text-center">
-			    <h2 class="heading">Homepage</h2>
+			    <h2 class="heading"><small><strong>Homepage</strong></small></h2>
+				<p><small><i>To either remove or edit a post click on the dedicated links provided at the bottom of every post.</i></small></p>
 			    <div class="intro"></div>
 			   
 		    </div><!--//container-->
@@ -84,7 +91,7 @@
 						<p style="font-size:20px;">Title &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <span style="font-size:30px;"> <%=movie.title%></span>&nbsp &nbsp &nbsp <span style="font-size:15px"> <%= movie.length%></span>&nbsp &nbsp &nbsp <span style="font-size:15px"> <%= movie.year%></span></p>
 						<div class="row">
 						<div class="col-12 " style="text-align:center">
-							<img src="./uploads/images/<%=movie.img%>" alt="Image" width="550" height="570" style="box-shadow: 6px 6px 10px black" ><br>
+							<img src="./uploads/images/<%=movie.img%>" alt="Image" width="320" height="370" style="box-shadow: 6px 6px 10px black" ><br>
 						</div>
 						</div>
 						<hr>		
@@ -92,7 +99,12 @@
 						<p style="font-size:20px;">Actors &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <span style="font-size:30px;"> <%=movie.actors%></span>
 						<p style="font-size:20px;">Director &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <span style="font-size:30px;"> <%=movie.director%></span>						
 						<p class= "text-justify" ><%=movie.desc%></p>
-						<p style="text-align:right;"><i><small><a href="" style="color:blue">Edit</a> | <a href="" style="color:red">Remove</a>  | Published on- <%= movie.date%></small></i></p>
+						<small><i>Comment</i></small>
+						<p class= "text-justify" ><%=movie.cm%></p>
+						<form method="POST">
+						<p style="text-align:right;"><i><small><a href="/edit/<%=movie._id%>" style="color:blue">Edit</a> | <a href="/delete/<%=movie._id%>" style="color:red">Remove</a>  | Published on- <%= movie.date%></small></i></p>
+						
+						</form>
 						<hr>
 						 <%})%>
 						 

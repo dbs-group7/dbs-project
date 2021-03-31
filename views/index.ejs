@@ -22,8 +22,8 @@
 <body>
     
     <header class="header text-center">	    
-	    <h1 class="blog-name pt-lg-4 mb-0"><a href="/index">CMS using MongoDB</a></h1>
-		<h1 class="blog-name pt-lg-4 mb-0"><a>Admin panel</a></h1>
+	    <h1 class="blog-name pt-lg-4 mb-0"><a href="/index">CMS</a></h1>
+		<h1 class="blog-name pt-lg-4 mb-0"><a>Admin Panel</a></h1>
         
 	    <nav class="navbar navbar-expand-lg navbar-dark" >
            
@@ -35,7 +35,8 @@
 				<div class="profile-section pt-3 pt-lg-0">
 				    			
 					
-					<div class="bio mb-3">Here you can make different queries regarding different contents of the website. </div><!--//Intro-->
+					<div class="bio mb-3" style="text-align:justify">On this page, you can work with different queries of MongoDB and control the CRUD, join, aggregate, sort, autosearch, autocomplete, etc. fetatures of this system. </div><!--//Intro-->
+					<div class="bio mb-3" style="text-align:justify">The schema used to maintain the NoSQL documents is also dynamic and can be changed at any moment. Schema particularly include Strings, Boolean, Number, TimeStamp, String array, Array of objects and data.</div>
 					<ul class="social-list list-inline py-3 mx-auto">
 			            <li class="list-inline-item"><a href="#"><i class="fab fa-github"></i></a></li>
 			        </ul><!--//repository list-->
@@ -44,11 +45,17 @@
 				
 				<ul class="navbar-nav flex-column text-left">
 					<li class="nav-item active">
-					    <a class="nav-link" href="/index">Refresh <span class="sr-only">(current)</span></a>
+					    <a class="nav-link" href="/">Refresh <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
 					    <a class="nav-link" href="/homepage">Homepage</a>
 					</li>
+					<li class="nav-item">
+					    <a class="nav-link" href="/reviewHome">Review</a>
+					</li>
+					<!-- <li class="nav-item">
+					    <a class="nav-link" href="/join">Join</a>
+					</li> -->
 					<li class="nav-item">
 					    <a class="nav-link" href="/about">About</a>
 					</li>
@@ -66,7 +73,8 @@
     <div class="main-wrapper">
 	    <section class="cta-section theme-bg-light py-5">
 		    <div class="container text-center">
-			    <h2 class="heading">Dashboard</h2>
+			    <h2 class="heading"><small><strong>Dashboard</strong></small></h2>
+				<p><small><i>Click on the below given links to perform a selected operation on the documents stored in the database.</i></small></p>
 				
 				<h1></h1>
 			    <div class="intro"></div>
@@ -79,9 +87,28 @@
 				    <div class="media">
 					    
 					    <div class="media-body">
-						 
 						 <nav class="blog-nav nav nav-justified my-5">
-							<a class="nav-link-next nav-item nav-link rounded" href="/insert_article_form">Post a new article<i class="arrow-next fas fa-long-arrow-alt-right"></i></a>
+							<a class="nav-link-next nav-item nav-link rounded" href="/insert_article_form"><strong>Post a new article</strong><i class="arrow-next fas fa-long-arrow-alt-right"></i></a>
+						</nav>
+						<div class="media-body">
+						 <nav class="blog-nav nav nav-justified my-5">
+							<a class="nav-link-next nav-item nav-link rounded" href="/insert_review_form"><strong>Add a review</strong><i class="arrow-next fas fa-long-arrow-alt-right"></i></a>
+						</nav>
+						<div class="media-body">
+						 <nav class="blog-nav nav nav-justified my-5">
+							<a class="nav-link-next nav-item nav-link rounded" href="/search"><strong>Search by movie title</strong><i class="arrow-next fas fa-long-arrow-alt-right"></i></a>
+						</nav>
+						<div class="media-body">
+						 <nav class="blog-nav nav nav-justified my-5">
+							<a class="nav-link-next nav-item nav-link rounded" href="/homepage"><strong>Delete an article</strong><i class="arrow-next fas fa-long-arrow-alt-right"></i></a>
+						</nav>
+						<div class="media-body">
+						 <nav class="blog-nav nav nav-justified my-5">
+							<a class="nav-link-next nav-item nav-link rounded" href="/homepage"><strong>Update an article</strong><i class="arrow-next fas fa-long-arrow-alt-right"></i></a>
+						</nav>
+						<div class="media-body">
+						 <nav class="blog-nav nav nav-justified my-5">
+							<a class="nav-link-next nav-item nav-link rounded" href="/insert_review_form"><strong>Add a review</strong><i class="arrow-next fas fa-long-arrow-alt-right"></i></a>
 						</nav>
 						 
 						 

@@ -77,18 +77,18 @@
 						 
 						 
 						 
-					<form action="/insert_article_form" method="POST" enctype="multipart/form-data">
+					<form action="/update/" method="POST" enctype="multipart/form-data">
+						
+						
+					
 						<div class="form-group">
 							<label><span style="color:red;">*</span>Title</label>
-							<input type="text" class="form-control" placeholder="Movie title.." name="title" required>
+							<input type="text" class="form-control" placeholder="Movie title.." name="title" required value="<%=title%>" >
 						</div>
-						<div class="form-group">
-							<label><span style="color:red;">*</span>Movie poster or other supporting documents</label>
-							<input type="file" name="img" id="img" required >
-						</div>
+						<input type="hidden" name="id" value="<%=id%>">
 						<div class="form-group">
 						<span style="color:red;">*</span> Rating <select name="rating" >
-							<option value="">--Choose between 1-5--</option>
+							<option value=""><%=rating%></option>
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
@@ -100,38 +100,29 @@
 						
 						<div class="form-group">
 							<label><span style="color:red;">*</span>Released in </label>
-							<input type="number" class="form-control" placeholder="2012, 2020,.." name="year" required>
+							<input type="number" class="form-control" placeholder="2012, 2020,.." name="year" value="<%=year%>" required>
 						</div>
 						<div class="form-group">
 							<label><span style="color:red;">*</span>Movie length</label>
-							<input type="text" class="form-control" placeholder="In 'hr' and 'min' only" name="length" required>
+							<input type="text" class="form-control" placeholder="In 'hr' and 'min' only" name="length" value="<%=length%>" required>
 						</div>
 						<div class="form-group">
 							<label><span style="color:red;">*</span>Genre</label>
-							<input type="text" class="form-control" placeholder="Horror, Thriller,.." name="genre" required>
+							<input type="text" class="form-control" placeholder="Horror, Thriller,.." name="genre" value="<%=genre%>" required>
 						</div>
 						<div class="form-group">
 							<label><span style="color:red;">*</span>Featuring actors</label>
-							<input type="text" class="form-control" placeholder="If more than one (Johan, Davis,..)" name="actors" required>
+							<input type="text" class="form-control" placeholder="If more than one (Johan, Davis,..)" name="actors" value="<%=actors%>" required>
 						</div>
 						<div class="form-group">
 							<label><span style="color:red;">*</span>Directed by</label>
-							<input type="text" class="form-control" placeholder="If more than one (Johan, Davis,..)" name="director" required>
+							<input type="text" class="form-control" placeholder="If more than one (Johan, Davis,..)" name="director" value="<%=director%>" required>
 						</div>
-						<div class="form-group">
-							<label><span style="color:red;">*</span>Description</label>
-							<textarea rows="5" cols="10" style=""  class="form-control" placeholder="Not more than 300 words" name="desc" required></textarea>
-							
-						</div>
-						<div class="form-group">
-							<label><span style="color:red;"></span>Any comments?</label>
-							<textarea rows="2" cols="10" style=""  class="form-control" placeholder="Not more than 300 words" name="cm" ></textarea>
-							
-						</div>
-						<button type="submit" class="btn btn-primary">Publish</button>
+											
+						<button type="submit" class="btn btn-primary">Update</button>
 					</form>
 						 
-						 
+						
 						 
 					    </div><!--//media-body-->
 				    </div><!--//media-->

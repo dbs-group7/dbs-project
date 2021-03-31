@@ -22,8 +22,8 @@
 <body>
     
     <header class="header text-center">	    
-	    <h1 class="blog-name pt-lg-4 mb-0"><a href="/">CMS using MongoDB</a></h1>
-		<h1 class="blog-name pt-lg-4 mb-0"><a>Admin panel</a></h1>
+	    <h1 class="blog-name pt-lg-4 mb-0"><a href="/">CMS</a></h1>
+		<h1 class="blog-name pt-lg-4 mb-0"><a>About</a></h1>
         
 	    <nav class="navbar navbar-expand-lg navbar-dark" >
            
@@ -35,7 +35,7 @@
 				<div class="profile-section pt-3 pt-lg-0">
 				    			
 					
-					<div class="bio mb-3">Here you can make different queries regarding different contents of the website. </div><!--//Intro-->
+					<div class="bio mb-3"> </div><!--//Intro-->
 					<ul class="social-list list-inline py-3 mx-auto">
 			            <li class="list-inline-item"><a href="#"><i class="fab fa-github"></i></a></li>
 			        </ul><!--//repository list-->
@@ -44,12 +44,18 @@
 				
 				<ul class="navbar-nav flex-column text-left">
 					<li class="nav-item ">
-					    <a class="nav-link" href="/index">Dashboard <span class="sr-only">(current)</span></a>
+					    <a class="nav-link" href="/">Refresh <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
 					    <a class="nav-link" href="/homepage">Homepage</a>
 					</li>
-					<li class="nav-item actve">
+					<li class="nav-item">
+					    <a class="nav-link" href="/reviewHome">Review</a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link" href="/join">Join</a>
+					</li>
+					<li class="nav-item active">
 					    <a class="nav-link" href="/about">About</a>
 					</li>
 					<li class="nav-item">
@@ -66,7 +72,8 @@
     <div class="main-wrapper">
 	    <section class="cta-section theme-bg-light py-5">
 		    <div class="container text-center">
-			    <h2 class="heading">Dashboard</h2>
+			    <h2 class="heading"><small><strong>About CMS</strong></small></h2>
+				<p><small><i>Content management system using MongoDB.</i></small></p>
 			    <div class="intro"></div>
 			   
 		    </div><!--//container-->
@@ -77,8 +84,90 @@
 				    <div class="media">
 					    
 					    <div class="media-body">
-						 
-						 
+						 <p><i><b>C</b>ontent<b> M</b>anagement<b> S</b>ystem</i> using MongoDB is a NoSQL based CMS. This project is developed as a part of academics. The developed system
+						 manage NoSQL queries using a middleware, Mongoose. This CMS support following list of queries.</p>
+						 <ol>
+							<li>
+								Create operation
+							</li>
+							<li>
+								Delete operation
+							</li>
+							<li>
+								Retrieve operation
+							</li>
+							<li>
+								Update operation
+							</li>
+							<li>
+								Aggregate operation
+							</li>
+							<li>
+								Autocomplete operation
+							</li>
+							<li>
+								Search operation
+							</li>
+							<li>
+								Sort operation
+							</li>
+							<li>
+								And, few others
+							</li>
+						 </ol>
+						 <p>We have also use following middlewares and dependencies</p>
+						 <ol>
+							<li>
+								Mongoose
+							</li>
+							<li>
+								NPM
+							</li>
+							<li>
+								NodeJS
+							</li>
+							<li>
+								Multer
+							</li>
+							<li>
+								ExpressJS
+							</li>
+							<li>
+								Validator
+							</li>
+						 </ol>
+						 <p>Following is the list of languages that we have used</p>
+						<ol>
+							<li>
+								HTML 
+							</li>
+							<li>
+								CSS 
+							</li>
+							<li>
+								Bootstrap
+							</li>
+							<li>
+								ExpressJS
+							</li>
+							<li>
+								Javascript
+							</li>
+							<li>
+								Ajax
+							</li>
+							<li>
+								ESJ Canvas
+							</li>
+							<li>
+								NodeJS for Mongoose
+							</li>
+							
+							
+							
+							
+							
+						</ol>
 						 
 						 
 						 
@@ -86,19 +175,11 @@
 				    </div><!--//media-->
 			    </div><!--//item-->
 			    
-			    <nav class="blog-nav nav nav-justified my-5">
-				  <a class="nav-link-next nav-item nav-link rounded" href="blog-list.html">Query Page<i class="arrow-next fas fa-long-arrow-alt-right"></i></a>
-				</nav>
+			    
 				
 		    </div>
 	    </section>
-	    
-	    <footer class="footer text-center py-2 theme-bg-dark">
-		   
-	        <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
-                <small class="copyright">Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-		   
-	    </footer>
+	   
     
     </div><!--//main-wrapper-->
     
